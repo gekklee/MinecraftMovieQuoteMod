@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraftmoviequotemod",
+	"version": "${version}",
+	"name": "MinecraftMovieQuoteMod",
+	"description": "Minecraft mod to replace some chat messages with a Minecraft movie quote.",
+	"authors": [
+		"GekkLee"
+	],
+	"contact": {
+		"sources": "https://github.com/gekklee/MinecraftMovieQuoteMod"
+	},
+	"license": "TBD",
+	"icon": "assets/minecraftmoviequotemod/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"xyz.gekklee.MinecraftMovieQuoteMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"requires": {
+		"fabric-api": "*"
+	}
+}
