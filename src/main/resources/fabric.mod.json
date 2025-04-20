@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/gekklee/MinecraftMovieQuoteMod"
 	},
-	"license": "TBD",
+	"license": "GPL-3.0 license",
 	"icon": "assets/minecraftmoviequotemod/icon.png",
 	"environment": "server",
 	"entrypoints": {
