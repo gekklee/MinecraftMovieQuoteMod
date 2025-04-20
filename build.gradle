@@ -28,6 +28,10 @@ loom {
 		}
 	}
 
+	mixin {
+		defaultRefmapName.set('minecraftmoviequotemod-refmap.json')
+		add sourceSets.main
+	}
 }
 
 dependencies {
