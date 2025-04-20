@@ -1,10 +1,6 @@
 package xyz.gekklee;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
-import net.minecraft.entity.damage.DamageTypes;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,14 +14,6 @@ public class MinecraftMovieQuoteMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ServerLivingEntityEvents.AFTER_DEATH.register((entity, damageSource) -> {
-			if (entity instanceof ServerPlayerEntity player) {
-				if (damageSource.isOf(DamageTypes.FALL)) {
-					String message = player.getNameForScoreboard() + " failed their water bucket release";
-					player.getServer().getPlayerManager().broadcast(Text.literal(message), false);
-				}
-			}
-		});
 		LOGGER.info("MinecraftMovieQuoteMod initialized");
 	}
 }
