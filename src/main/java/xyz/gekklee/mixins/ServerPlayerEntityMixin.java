@@ -19,6 +19,9 @@ public abstract class ServerPlayerEntityMixin {
         if (message.getString().contains("fell") || message.getString().contains("hit the ground")) {
             player.getServer().getPlayerManager().broadcast(Text.of(player.getNameForScoreboard() + " failed their water bucket release"), false);
             ci.cancel();
+        } else if (message.getString().contains("lava")) {
+            player.getServer().getPlayerManager().broadcast(Text.of(player.getNameForScoreboard() + " visited Steve's Lava Chicken"), false);
+            ci.cancel();
         }
     }
 }
