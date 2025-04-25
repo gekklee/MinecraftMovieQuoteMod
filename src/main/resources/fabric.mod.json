@@ -12,7 +12,7 @@
 	},
 	"license": "GPL-3.0 license",
 	"icon": "assets/minecraftmoviequotemod/icon.png",
-	"environment": "server",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"xyz.gekklee.MinecraftMovieQuoteMod"
